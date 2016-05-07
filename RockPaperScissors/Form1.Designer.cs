@@ -72,7 +72,7 @@
             this.Computer.ReadOnly = true;
             this.Computer.Size = new System.Drawing.Size(100, 51);
             this.Computer.TabIndex = 3;
-            this.Computer.Text = "Computer Choice";
+            this.Computer.Text = "Computer Choice     ";
             // 
             // CombatLog
             // 

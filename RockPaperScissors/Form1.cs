@@ -61,17 +61,15 @@ namespace RockPaperScissors
 
         void VicotoryCheck()
         {
-            if (UserChoice == "Rock" && OpponentChoice == "Paper")
+            string VictoryOne = "Rock>Scissors";
+            string VictoryTwo = "Paper>Rock";
+            string VictoryThree = "Scissors>Paper";
+
+            string check = UserChoice + ">" + OpponentChoice;
+
+            if(check == VictoryOne || check == VictoryTwo || check == VictoryThree )
             {
-                CombatLog.Text += "Victory: " + UserChoice + " Beats " + OpponentChoice + "\n";
-            }
-            else if (UserChoice == "Paper" && OpponentChoice == "Rock")
-            {
-                CombatLog.Text += "Victory: " + UserChoice + " Beats " + OpponentChoice + "\n";
-            }
-            else if (UserChoice == "Scissors" && OpponentChoice == "Paper")
-            {
-                CombatLog.Text += "Victory: " + UserChoice + " Beats " + OpponentChoice + "\n";
+                CombatLog.Text += "Victory: " + UserChoice + " beats " + OpponentChoice + "\n";
             }
             else if (UserChoice == OpponentChoice)
             {

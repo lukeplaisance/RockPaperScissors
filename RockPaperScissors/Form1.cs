@@ -17,16 +17,14 @@ namespace RockPaperScissors
             InitializeComponent();
         }
 
-        /// <summary>
+        /// <summary> 1)
         /// Create two variables of type string
         /// These variables will be used to hold inforamtion about 
         /// the option the player choose to play against the computer
         /// and the same goes for the computer choice
         /// </summary>
-        string UserChoice;
-        string OpponentChoice;
 
-        /// <summary>
+        /// <summary> 2)
         /// This function is all ready attached to our RockChoice button on our form that is provided.
         /// This will be executed once the RockChoice button has been clicked by the user of our application.
         /// </summary>
@@ -41,7 +39,7 @@ namespace RockPaperScissors
             /// </summary>
         }
 
-        /// <summary>
+        /// <summary> 2)
         /// This function is all ready attached to our PaperChoice button on our form that is provided.
         /// This will be executed once the PaperChoice button has been clicked by the user of our application.
         /// </summary>
@@ -56,7 +54,7 @@ namespace RockPaperScissors
             /// </summary>
         }
 
-        /// <summary>
+        /// <summary> 2)
         /// This function is all ready attached to our ScissorsChoice button on our form that is provided.
         /// This will be executed once the ScissorsChoice button has been clicked by the user of our application.
         /// </summary>
@@ -71,7 +69,7 @@ namespace RockPaperScissors
             /// </summary>
         }
 
-        /// <summary>
+        /// <summary> 3)
         /// This function will generate us a choice for our computer player based on some 
         /// conditions we set for it. We will call this function in the ScissorsChoice_Click, PaperChoice_Click, and RockChoice_Click
         /// functions above. We call it in those function to make it appear as if the computer and user are selecting thier choose at the 
@@ -101,11 +99,11 @@ namespace RockPaperScissors
         }
 
 
-        /// <summary>
+        /// <summary> 4)
         /// This function is called from the OpponentSelection function above.
         /// In this function will check to see if the user beats the computer or if the computer beats the player
         /// </summary>
-        void VicotoryCheck()
+        void VictoryCheck()
         {
             /// <summary>
             /// So now that we have all the set up for our player and computer to select the option they wish to play

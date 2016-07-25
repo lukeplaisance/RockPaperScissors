@@ -78,14 +78,14 @@ namespace RockPaperScissors
         void OpponentSelection()
         {
             /// <summary>
-            /// To we will need to create some way to get the computer to generate
-            /// a response to the players choice. There are a few ways we can do this
+            /// Now we will need to define a way to have the computer to generate
+            /// a response against the players choice. There are a few ways we can do this
             /// but we will provide you with one using the Random class. This Random class
             /// will generate us a number between two digits.
-            /// In this case we want a number between 1 and 3 including 1 and 3.
+            /// In this case we want a number between 1 and 4 including 1 but not 4.
             /// </summary>
             Random r = new Random();
-            int choice = r.Next(1, 3);
+            int choice = r.Next(1, 4);
 
             ///<summary>
             /// Once we have our number generated we need to create a set of conditionals to
@@ -93,38 +93,36 @@ namespace RockPaperScissors
             /// 1 = rock
             /// 2 = paper
             /// 3 = scissors
-            /// 
-            /// Once the computers response has been generated we will call the Victory Check function.
             /// </summary>
         }
 
 
         /// <summary> 4)
-        /// This function is called from the OpponentSelection function above.
-        /// In this function will check to see if the user beats the computer or if the computer beats the player
+        /// This function can be called in a few different ways. If you want to limit the amount you have to type you can
+        /// call it in one time from the OpponentSelection function above at the very end or we can call it at the end of our
+        /// RockChoice, PaperChoice, and ScissorsChoice functions we made at the begging of the lesson. 
         /// </summary>
         void VictoryCheck()
         {
             /// <summary>
-            /// So now that we have all the set up for our player and computer to select the option they wish to play
+            /// So now that we have all our string variables and fucntions set up for our player and computer to select the option they wish to play
             /// its time to see who wins. There are multiple ways we can do this using more complex data types like Lists or Arrays
-            /// but to keep it simple we are just gonna make a few string varaibles one for each victory condition.
-            /// we will need one to say Rock beats Scissors, Paper beats Rock, and Scissors beats Paper.
+            /// but to keep it simple we will use make a few string varaibles one for each victory condition.
+            /// We will need one for each of the victory types in our game Rock beats Scissors, Paper beats Rock, and Scissors beats Paper.
             /// </summary>
 
             /// <summary>
             /// Once we have our vicotory conditions defined we need to cocme up with some way to check.
-            /// One way I like to do this since we are using strings for everything is we can make a new string and 
-            /// format it like our vicotry check strings.
+            /// One way I like to do this since we are using strings for everything we can make a new string and 
+            /// format it like our victory condition strings.
             /// </summary>
 
             ///<summary>
-            /// Once we have our strings made one two represent the current choices in play to check against the victory conditions
-            /// and one for each of the three victory types we need to make some more conditional statements using if, else if, and else checks.
+            /// Now that we have or strings created we need to make some more conditional statements using if, else if, and else checks to determine the outcome of the battle between the player and computer.
             /// 
-            /// We will use this conditianal statements to see if our string that contains the current play to all the victory type to see if the user or the computer has won.
-            /// We will alson needs to see if there is a draw so if the user and the computer have selected the same choice.
-            /// Then if we did not meet the vicotry conditions or draw conditions, the user has lost and the computer is the winner.
+            /// We will use these conditianal statements to compare our string that contains the current choices in play to all the victory conditions to see if the user or the computer has won.
+            /// We will also need to see if there is a draw, so if the user and the computer have selected the same choice.
+            /// Then if we did not meet any of the victory conditions or the draw condition, the user has lost and the computer is the winner.
             /// </summary>
         }
     }
